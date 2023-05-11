@@ -38,7 +38,7 @@ $(document).ready(function(){
     var apiKey = $('#apiKey').val();
     var startDate = $('#startDate').val();
     var endDate = $('#endDate').val();
-    $.get('billing-usage.php', {apikey: apiKey, startDate: startDate, endDate: endDate}, function(data) {
+    $.get('check.php', {apikey: apiKey, startDate: startDate, endDate: endDate}, function(data) {
       $('#results').html(data);
     });
   });
